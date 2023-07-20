@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wellbiing.wellbiinghealthcare.LoginController">
+   <children>
+      <ImageView fitHeight="890.0" fitWidth="1537.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/login-texture-bg.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="171.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="523.0" style="-fx-background-radius: 50; -fx-background-color: #009999;">
+         <children>
+            <Label id="labelName" fx:id="labelName" layoutX="88.0" layoutY="35.0" prefHeight="162.0" prefWidth="380.0" text="WellBiing Healthcare &#10;Management System" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label id="labelUsername" fx:id="labelUsername" layoutX="32.0" layoutY="234.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label id="labelPassword" fx:id="labelPassword" layoutX="32.0" layoutY="308.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button id="login" fx:id="login" layoutX="185.0" layoutY="441.0" mnemonicParsing="false" onAction="#onLoginButtonClick" onMouseDragEntered="#ButtonHoverStart" onMouseDragExited="#ButtonHoverEnd" onMouseEntered="#ButtonHoverStart" onMouseExited="#ButtonHoverEnd" prefHeight="50.0" prefWidth="160.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Login">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="28.0" />
+               </font>
+            </Button>
+            <PasswordField id="password" fx:id="password" layoutX="190.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#enterKeyPressPF" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Leelawadee UI" size="20.0" />
+               </font></PasswordField>
+            <TextField id="username" fx:id="username" layoutX="190.0" layoutY="236.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#enterKeyPressTF" prefHeight="40.0" prefWidth="300.0" promptText="Username" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Leelawadee UI" size="20.0" />
+               </font></TextField>
+            <Label id="invalid" fx:id="invalid" accessibleText="invalid" alignment="CENTER" layoutX="-1.0" layoutY="184.0" prefHeight="27.0" prefWidth="523.0" textAlignment="CENTER" textFill="#c74b4b">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label id="valid" fx:id="valid" accessibleText="invalid" alignment="CENTER" layoutY="184.0" prefHeight="27.0" prefWidth="523.0" textAlignment="CENTER" textFill="#17d74d">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="995.0" layoutY="212.0" prefHeight="382.0" prefWidth="441.0" text="Store Electronic Medical &#10;Records in an&#10;Efficient, Secure, and&#10;Robust Management&#10;System" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="36.0" />
+         </font></Label>
+      <Separator layoutX="812.0" layoutY="72.0" orientation="VERTICAL" prefHeight="685.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>
